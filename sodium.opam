@@ -1,15 +1,16 @@
 opam-version: "2.0"
-version: "dev"
-maintainer: "sheets@alum.mit.edu"
+synopsis: "Ctypes bindings to libsodium"
+description: "Ctypes bindings to libsodium 1.0.9+ which wraps NaCl."
+maintainer: "Ahrefs <github@ahrefs.com>"
 authors: [
   "David Sheets <sheets@alum.mit.edu>"
   "Peter Zotov <whitequark@whitequark.org>"
   "Benjamin Canou <benjamin@ocamlpro.com>"
 ]
-homepage: "https://github.com/dsheets/ocaml-sodium/"
-bug-reports: "https://github.com/dsheets/ocaml-sodium/issues/"
-dev-repo: "git+https://github.com/dsheets/ocaml-sodium.git"
-tags: ["org:mirage"]
+homepage: "https://github.com/ahrefs/ocaml-sodium/"
+bug-reports: "https://github.com/ahrefs/ocaml-sodium/issues/"
+dev-repo: "git+https://github.com/ahrefs/ocaml-sodium.git"
+tags: ["org:ahrefs"]
 build: [
   ["dune" "subst"] {pinned}
   ["dune" "build" "-p" name "-j" jobs]
